@@ -1,0 +1,24 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/GameMap.umap",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Maps/GameMap.umap",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/BP_FPSProjectGameModeBase.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/BP_FPSCharacter.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/WorldGridMaterial.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/HeroFPP_PhysicsAsset.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/HeroFPP_Skeleton.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/HeroFPP.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/lambert2.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/proxy_geo_body_m.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale_PhysicsAsset.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale_Skeleton.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale.uasset"
+			]
+		}
+	]
+}

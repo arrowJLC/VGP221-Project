@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Unreal\\VGP221-Project\\VGP221_A1\\Source\\VGP221_A1\\VGP221_A1.Build.cs",
+		"D:\\Unreal\\VGP221-Project\\VGP221_A1\\Source\\VGP221_A1.Target.cs",
+		"D:\\Unreal\\VGP221-Project\\VGP221_A1\\Source\\VGP221_A1Editor.Target.cs"
+	],
+	"EngineVersion": "5.6.0"
+}

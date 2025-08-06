@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\VGP221_A1.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\VGP221_A1.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\VGP221_A1Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\VGP221_A1">
+      <UniqueIdentifier>{B3227303-8C20-3031-8245-5BA30115ACA4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\VGP221_A1\VGP221_A1.Build.cs">
+      <Filter>Source\VGP221_A1</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\VGP221_A1\VGP221_A1.cpp">
+      <Filter>Source\VGP221_A1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\VGP221_A1\VGP221_A1.h">
+      <Filter>Source\VGP221_A1</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_A1\Private">
+      <UniqueIdentifier>{4F7A7389-9F95-357E-843B-B9621E270E0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VGP221_A1\Private\Gamemode">
+      <UniqueIdentifier>{B7975B59-D7BF-34AB-94E6-F1CE83EAA2E9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectGameModeBase.cpp">
+      <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
+    </ClCompile>
+    <Filter Include="Source\VGP221_A1\Private\Player">
+      <UniqueIdentifier>{31DCC782-D952-353F-B448-8D0ABD15945E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Player\FPSCharacter.cpp">
+      <Filter>Source\VGP221_A1\Private\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\VGP221_A1\Public">
+      <UniqueIdentifier>{640E5859-4D7E-328A-A8A7-058E910BC024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VGP221_A1\Public\Gamemode">
+      <UniqueIdentifier>{294D9924-8747-33B6-88F5-38EF26D8BA62}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h">
+      <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_A1\Public\Player">
+      <UniqueIdentifier>{DEAF3F57-9D77-38B8-9FAB-A3C3F28BB678}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Player\FPSCharacter.h">
+      <Filter>Source\VGP221_A1\Public\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

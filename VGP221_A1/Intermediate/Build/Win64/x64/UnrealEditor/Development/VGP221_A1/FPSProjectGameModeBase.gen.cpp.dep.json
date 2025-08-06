@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal\\vgp221-project\\vgp221_a1\\intermediate\\build\\win64\\unrealeditor\\inc\\vgp221_a1\\uht\\fpsprojectgamemodebase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal\\vgp221-project\\vgp221_a1\\intermediate\\build\\win64\\x64\\vgp221_a1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal\\vgp221-project\\vgp221_a1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\vgp221_a1\\definitions.vgp221_a1.h",
+            "d:\\unreal\\vgp221-project\\vgp221_a1\\source\\vgp221_a1\\public\\gamemode\\fpsprojectgamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "d:\\unreal\\vgp221-project\\vgp221_a1\\intermediate\\build\\win64\\unrealeditor\\inc\\vgp221_a1\\uht\\fpsprojectgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "VGP221_A1",
+			"Path": "..\\Source\\VGP221_A1.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "VGP221_A1Editor",
+			"Path": "..\\Source\\VGP221_A1Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
