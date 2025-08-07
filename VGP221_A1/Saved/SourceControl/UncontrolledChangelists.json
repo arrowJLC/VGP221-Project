@@ -17,7 +17,28 @@
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/proxy_geo_body_m.uasset",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale_PhysicsAsset.uasset",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale_Skeleton.uasset",
-				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale.uasset"
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/GenericMale.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Abbey_Street_Railway_Bridge/abbey_street_railway_bridge/Textures/abbey_street_railway_bridge_texture_0.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Abbey_Street_Railway_Bridge/abbey_street_railway_bridge/Materials/AbbeyStreetBridge01_Model_7_u1_v1.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Abbey_Street_Railway_Bridge/abbey_street_railway_bridge/StaticMeshes/abbey_street_railway_bridge.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/Projectile/BP_FPSProjectile.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Materials/M_Projectile.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/9mm_Luger_Ammo/9mm_luger_fbx/Textures/9mm_luger_fbx_texture_0.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/9mm_Luger_Ammo/9mm_luger_fbx/Textures/9mm_luger_fbx_texture_1.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/9mm_Luger_Ammo/9mm_luger_fbx/Textures/9mm_luger_fbx_texture_2.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/9mm_Luger_Ammo/9mm_luger_fbx/Materials/Material.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/9mm_Luger_Ammo/9mm_luger_fbx/StaticMeshes/9mm_luger_fbx.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Concrete_Barrier/scene/Textures/small_barricade_2_baseColor.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Concrete_Barrier/scene/Textures/small_barricade_2_metallicRoughness.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Concrete_Barrier/scene/Textures/small_barricade_2_normal.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Concrete_Barrier/scene/Materials/small_barricade_2.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Fab/Concrete_Barrier/scene/StaticMeshes/scene.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/Projectile/Fbx_Default_Material.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Meshes/Projectile/Sphere.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Textures/crosshair.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/HUD/BP_GameHUD.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_GameWidget.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_ButtonWidget.uasset"
 			]
 		}
 	]

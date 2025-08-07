@@ -1,5 +1,14 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.VGP221_A1.gen.cpp.obj": [
+			"FPSProjectGameModeBase.gen.cpp.obj",
+			"ButtonWidget.gen.cpp.obj",
+			"FPSCharacter.gen.cpp.obj",
+			"FPSProjectile.gen.cpp.obj",
+			"GameHUD.gen.cpp.obj",
+			"GameWidget.gen.cpp.obj",
+			"VGP221_A1.init.gen.cpp.obj"
+		]
 	}
 }

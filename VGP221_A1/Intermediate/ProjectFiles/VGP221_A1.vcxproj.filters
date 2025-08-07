@@ -48,11 +48,32 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectGameModeBase.cpp">
       <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
     </ClCompile>
+    <Filter Include="Source\VGP221_A1\Private\GUI">
+      <UniqueIdentifier>{C7CBE682-2F33-3D0F-BCBA-0419DEF2599D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\ButtonWidget.cpp">
+      <Filter>Source\VGP221_A1\Private\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\GameWidget.cpp">
+      <Filter>Source\VGP221_A1\Private\GUI</Filter>
+    </ClCompile>
+    <Filter Include="Source\VGP221_A1\Private\HUD">
+      <UniqueIdentifier>{B9F2D530-7CEE-357E-900E-40191887C6FD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\HUD\GameHUD.cpp">
+      <Filter>Source\VGP221_A1\Private\HUD</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\Player">
       <UniqueIdentifier>{31DCC782-D952-353F-B448-8D0ABD15945E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Player\FPSCharacter.cpp">
       <Filter>Source\VGP221_A1\Private\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\VGP221_A1\Private\Projectile">
+      <UniqueIdentifier>{19C66E39-CFB9-329E-8B2D-A3FA13700620}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Projectile\FPSProjectile.cpp">
+      <Filter>Source\VGP221_A1\Private\Projectile</Filter>
     </ClCompile>
     <Filter Include="Source\VGP221_A1\Public">
       <UniqueIdentifier>{640E5859-4D7E-328A-A8A7-058E910BC024}</UniqueIdentifier>
@@ -63,11 +84,32 @@
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h">
       <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
     </ClInclude>
+    <Filter Include="Source\VGP221_A1\Public\GUI">
+      <UniqueIdentifier>{814CFB2C-7491-3BFE-ABDC-01BF7E39F034}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\ButtonWidget.h">
+      <Filter>Source\VGP221_A1\Public\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\GameWidget.h">
+      <Filter>Source\VGP221_A1\Public\GUI</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_A1\Public\HUD">
+      <UniqueIdentifier>{165D9D65-D352-3874-B649-0F78F306748D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\HUD\GameHUD.h">
+      <Filter>Source\VGP221_A1\Public\HUD</Filter>
+    </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\Player">
       <UniqueIdentifier>{DEAF3F57-9D77-38B8-9FAB-A3C3F28BB678}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Player\FPSCharacter.h">
       <Filter>Source\VGP221_A1\Public\Player</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_A1\Public\Projectile">
+      <UniqueIdentifier>{61B83411-32E5-344C-ABC6-5FCD85134421}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Projectile\FPSProjectile.h">
+      <Filter>Source\VGP221_A1\Public\Projectile</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
