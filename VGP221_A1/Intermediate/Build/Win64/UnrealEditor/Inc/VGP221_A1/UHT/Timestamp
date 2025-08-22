@@ -1,6 +1,8 @@
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\HUD\GameHUD.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Player\FPSCharacter.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\ButtonWidget.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\GameWidget.h
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Projectile\FPSProjectile.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\HUD\GameHUD.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\GameWidget.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\MenuWidget.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Player\FPSCharacter.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Gamemode\FPSProjectMainMenuBase.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\ButtonWidget.h

@@ -11,6 +11,8 @@
     <None Include="..\..\Source\VGP221_A1Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -48,6 +50,9 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectGameModeBase.cpp">
       <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectMainMenuBase.cpp">
+      <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\GUI">
       <UniqueIdentifier>{C7CBE682-2F33-3D0F-BCBA-0419DEF2599D}</UniqueIdentifier>
     </Filter>
@@ -55,6 +60,9 @@
       <Filter>Source\VGP221_A1\Private\GUI</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\GameWidget.cpp">
+      <Filter>Source\VGP221_A1\Private\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\MenuWidget.cpp">
       <Filter>Source\VGP221_A1\Private\GUI</Filter>
     </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\HUD">
@@ -84,6 +92,9 @@
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h">
       <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectMainMenuBase.h">
+      <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
+    </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\GUI">
       <UniqueIdentifier>{814CFB2C-7491-3BFE-ABDC-01BF7E39F034}</UniqueIdentifier>
     </Filter>
@@ -91,6 +102,9 @@
       <Filter>Source\VGP221_A1\Public\GUI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\GameWidget.h">
+      <Filter>Source\VGP221_A1\Public\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\MenuWidget.h">
       <Filter>Source\VGP221_A1\Public\GUI</Filter>
     </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\HUD">

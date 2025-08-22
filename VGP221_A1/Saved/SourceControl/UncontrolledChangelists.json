@@ -38,7 +38,10 @@
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Textures/crosshair.uasset",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/HUD/BP_GameHUD.uasset",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_GameWidget.uasset",
-				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_ButtonWidget.uasset"
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_ButtonWidget.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Maps/MainMenu.umap",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_MenuWidget.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/BP_FPSProjectMainMenuBase.uasset"
 			]
 		}
 	]

@@ -29,11 +29,11 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* ScoreText;
 
-	UPROPERTY(meta = (BindWidget))
+	/*UPROPERTY(meta = (BindWidget))
 	UVerticalBox* ButtonContainer;
 
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<UButtonWidget> ButtonWidgetPrefab;
+	TSubclassOf<UButtonWidget> ButtonWidgetPrefab;*/
 
 	UFUNCTION()
 	void SetHealthBar(float percentage);

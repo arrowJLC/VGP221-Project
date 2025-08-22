@@ -252,6 +252,8 @@
     <None Include="..\..\VGP221_A1.uproject"/>
     <None Include="..\..\Source\VGP221_A1.Target.cs"/>
     <None Include="..\..\Source\VGP221_A1Editor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -265,10 +267,16 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectGameModeBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectMainMenuBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\ButtonWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\GameWidget.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\MenuWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\HUD\GameHUD.cpp">
@@ -281,8 +289,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h"/>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectMainMenuBase.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\ButtonWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\GameWidget.h"/>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\MenuWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\HUD\GameHUD.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Player\FPSCharacter.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Projectile\FPSProjectile.h"/>
