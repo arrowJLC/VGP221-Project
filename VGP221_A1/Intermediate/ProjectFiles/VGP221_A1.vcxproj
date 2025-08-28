@@ -270,16 +270,25 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectMainMenuBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\MenuGameMode.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\ButtonWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\GameWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\MainMenuWidget.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\MenuWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\HUD\GameHUD.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\HUD\MenuHUD.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Player\FPSCharacter.cpp">
@@ -290,10 +299,13 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectMainMenuBase.h"/>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\MenuGameMode.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\ButtonWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\GameWidget.h"/>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\MainMenuWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\MenuWidget.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\HUD\GameHUD.h"/>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\HUD\MenuHUD.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Player\FPSCharacter.h"/>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Projectile\FPSProjectile.h"/>
   </ItemGroup>

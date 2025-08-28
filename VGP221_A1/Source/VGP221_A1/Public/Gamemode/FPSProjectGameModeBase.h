@@ -16,6 +16,4 @@ class VGP221_A1_API AFPSProjectGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 
 	virtual void StartPlay() override;
-
-	
 };

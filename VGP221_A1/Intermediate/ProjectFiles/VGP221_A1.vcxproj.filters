@@ -53,6 +53,9 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\FPSProjectMainMenuBase.cpp">
       <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\MenuGameMode.cpp">
+      <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\GUI">
       <UniqueIdentifier>{C7CBE682-2F33-3D0F-BCBA-0419DEF2599D}</UniqueIdentifier>
     </Filter>
@@ -62,6 +65,9 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\GameWidget.cpp">
       <Filter>Source\VGP221_A1\Private\GUI</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\MainMenuWidget.cpp">
+      <Filter>Source\VGP221_A1\Private\GUI</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\GUI\MenuWidget.cpp">
       <Filter>Source\VGP221_A1\Private\GUI</Filter>
     </ClCompile>
@@ -69,6 +75,9 @@
       <UniqueIdentifier>{B9F2D530-7CEE-357E-900E-40191887C6FD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\VGP221_A1\Private\HUD\GameHUD.cpp">
+      <Filter>Source\VGP221_A1\Private\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\HUD\MenuHUD.cpp">
       <Filter>Source\VGP221_A1\Private\HUD</Filter>
     </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\Player">
@@ -95,6 +104,9 @@
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\FPSProjectMainMenuBase.h">
       <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\MenuGameMode.h">
+      <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
+    </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\GUI">
       <UniqueIdentifier>{814CFB2C-7491-3BFE-ABDC-01BF7E39F034}</UniqueIdentifier>
     </Filter>
@@ -104,6 +116,9 @@
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\GameWidget.h">
       <Filter>Source\VGP221_A1\Public\GUI</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\MainMenuWidget.h">
+      <Filter>Source\VGP221_A1\Public\GUI</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\GUI\MenuWidget.h">
       <Filter>Source\VGP221_A1\Public\GUI</Filter>
     </ClInclude>
@@ -111,6 +126,9 @@
       <UniqueIdentifier>{165D9D65-D352-3874-B649-0F78F306748D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\HUD\GameHUD.h">
+      <Filter>Source\VGP221_A1\Public\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\HUD\MenuHUD.h">
       <Filter>Source\VGP221_A1\Public\HUD</Filter>
     </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\Player">

@@ -102,7 +102,7 @@ void AFPSCharacter::Fire()
 	FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
 
 	FRotator MuzzleRotation = CameraRotation;
-	MuzzleRotation.Pitch += 10.0f;
+	MuzzleRotation.Pitch += 0.0f/*10.0f*/;
 
 	// Start of spawning the projectile
 	UWorld* World = GetWorld();
@@ -119,6 +119,33 @@ void AFPSCharacter::Fire()
 	// Launch spawned projectile in the camera rotation
 	FVector LaunchDirection = MuzzleRotation.Vector();
 	Projectile->FireInDirection(LaunchDirection);
+
+	Damage(10.0f);
+}
+
+void AFPSCharacter::Damage(float damageAmt)
+{
+	Health -= damageAmt;
+	float HealthPercent = Health / MaxHealth;
+
+	AGameHUD* GameHUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AGameHUD>();
+	//	//GameHUD->GameWidgetContainer->SetHealthBar(HealthPerecent);
+	if (GameHUD)
+	{
+		GameHUD->GameWidgetContainer->SetHealthBar(HealthPercent);
+
+		if (Health <= 0)
+		{
+			GameHUD->ShowGameOverScreen(); 
+		}
+	}
+}
+
+
+float AFPSCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	Damage(DamageAmount);
+	return DamageAmount;
 }
 
 void AFPSCharacter::Gravity()
@@ -152,5 +179,10 @@ void AFPSCharacter::Gravity()
 	// Launch spawned projectile in the camera rotation
 	//FVector LaunchDirection = MuzzleRotation.Vector();
 	//Projectile->FireInDirection(LaunchDirection);
+
+	float HealthPerecent = Health / MaxHealth;
+
+	AGameHUD* GameHUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AGameHUD>();
+	GameHUD->GameWidgetContainer->SetHealthBar(HealthPerecent);
 }
 

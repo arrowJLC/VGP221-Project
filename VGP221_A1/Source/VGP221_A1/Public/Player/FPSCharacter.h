@@ -7,7 +7,11 @@
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/Character.h"
 #include "Projectile/FPSProjectile.h"
+
+#include "Kismet/GameplayStatics.h"
+#include "HUD/GameHUD.h"
 #include "FPSCharacter.generated.h"
+
 
 UCLASS()
 class VGP221_A1_API AFPSCharacter : public ACharacter
@@ -58,4 +62,13 @@ public:
 
 	UFUNCTION()
 	void Gravity();
+
+	UFUNCTION()
+	void Damage(float damageAmt);
+
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
+
+	float Health = 100.0f;
+	float MaxHealth = 100.0f;
 };

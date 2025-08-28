@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeVGP221_A1_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xD2E0DABF,
-				0x9AD2ECF9,
+				0x527C8E5D,
+				0xB7288B0F,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_VGP221_A1.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_VGP221_A1.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_VGP221_A1(Z_Construct_UPackage__Script_VGP221_A1, TEXT("/Script/VGP221_A1"), Z_Registration_Info_UPackage__Script_VGP221_A1, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD2E0DABF, 0x9AD2ECF9));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_VGP221_A1(Z_Construct_UPackage__Script_VGP221_A1, TEXT("/Script/VGP221_A1"), Z_Registration_Info_UPackage__Script_VGP221_A1, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x527C8E5D, 0xB7288B0F));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

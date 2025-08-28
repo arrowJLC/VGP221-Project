@@ -27,17 +27,22 @@ public:
 	// 1. HUD method of Making UI
 	virtual void DrawHUD() override;
 
-	// 2. Saltes method of Making UI
+	// 2. Slates method of Making UI
 	TSharedPtr<class SSettingsWidget> SettingsWidget;
-	//TSharedPtr<class SWidget> SlateWidgetContainer;
+	TSharedPtr<class SWidget> SlateWidgetContainer;
 
 	/*void ShowSettingsMenu();
 	void HideSettingsMenu();*/
-	
+
 	// 3. UMG method of making UI
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UGameWidget> StartingGameWidget;
 	UGameWidget* GameWidgetContainer;
+
+	UPROPERTY(EditAnywhere, Category = "UI")
+	TSubclassOf<class UUserWidget> GameOverWidgetClass;
+
+	void ShowGameOverScreen();
 
 	void ToggleGameMenuVisibility(TSubclassOf<UGameWidget> NewGameWidget);
 };

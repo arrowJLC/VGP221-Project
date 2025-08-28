@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VGP221_A1ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc647dd732995586a2f205866ad1f35ce82d646c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+937e6da1b0a680a86cb5075cda7e8aebc6ecf620")]
 [assembly: System.Reflection.AssemblyProductAttribute("VGP221_A1ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VGP221_A1ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

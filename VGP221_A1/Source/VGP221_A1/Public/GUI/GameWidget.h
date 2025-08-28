@@ -19,7 +19,7 @@ UCLASS()
 class VGP221_A1_API UGameWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	
+
 public:
 	virtual void NativeConstruct() override;
 
@@ -29,11 +29,11 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* ScoreText;
 
-	/*UPROPERTY(meta = (BindWidget))
+	UPROPERTY(meta = (BindWidget))
 	UVerticalBox* ButtonContainer;
 
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<UButtonWidget> ButtonWidgetPrefab;*/
+	TSubclassOf<UButtonWidget> ButtonWidgetPrefab;
 
 	UFUNCTION()
 	void SetHealthBar(float percentage);

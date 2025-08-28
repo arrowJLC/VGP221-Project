@@ -41,6 +41,11 @@
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_ButtonWidget.uasset",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Maps/MainMenu.umap",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_MenuWidget.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/WBP_MainMenu.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/BP_MenuGameMode.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/HUD/BP_MenuHUD.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/gameOver/WBP_GameOver.uasset",
+				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/GUI/gameOver/WBP_WinOver.uasset",
 				"D:/Unreal/VGP221-Project/VGP221_A1/Content/Blueprint/BP_FPSProjectMainMenuBase.uasset"
 			]
 		}
