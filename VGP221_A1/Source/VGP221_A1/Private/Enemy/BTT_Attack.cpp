@@ -3,9 +3,10 @@
 
 #include "Enemy/BTT_Attack.h"
 
-//EBTNodeResult::Type UBTT_Attack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-//{
-//	float DamageAmt = OwnerComp.GetBlackboardComponent()->GetValueAsFloat(FName("DamageAmt"));
+
+EBTNodeResult::Type UBTT_Attack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
+{
+    //	float DamageAmt = OwnerComp.GetBlackboardComponent()->GetValueAsFloat(FName("DamageAmt"));
 //	DamageAmt = Cast<AEnemyAIController>(OwnerComp.GetAIOwner())->DamageAmt;
 //	DamageAmt = Cast<AEnemyAICharacter>(OwnerComp.GetAIOwner()->GetPawn())->CharacterDamageAmt;
 //
@@ -21,11 +22,7 @@
 //	AFPSCharacter* player = Cast<AFPSCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 //	UGameplayStatics::ApplyDamage(player, DamageAmt, OwnerComp.GetAIOwner(), OwnerComp.GetAIOwner()->GetPawn(), UDamageType::StaticClass());
 //
-//	return EBTNodeResult::Succeeded;
-//}
 
-EBTNodeResult::Type UBTT_Attack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-{
     AEnemyAIController* AICon = Cast<AEnemyAIController>(OwnerComp.GetAIOwner());
     if (!AICon) return EBTNodeResult::Failed;
 

@@ -7,6 +7,7 @@
 			"ButtonWidget.gen.cpp.obj",
 			"EnemyAICharacter.gen.cpp.obj",
 			"EnemyAIController.gen.cpp.obj",
+			"FPSCharacter.gen.cpp.obj",
 			"FPSProjectGameModeBase.gen.cpp.obj",
 			"FPSProjectile.gen.cpp.obj",
 			"GameHUD.gen.cpp.obj",
@@ -14,7 +15,6 @@
 			"MainMenuWidget.gen.cpp.obj",
 			"MenuGameMode.gen.cpp.obj",
 			"MenuHUD.gen.cpp.obj",
-			"FPSCharacter.gen.cpp.obj",
 			"VGP221_A1.init.gen.cpp.obj"
 		]
 	}

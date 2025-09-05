@@ -19,17 +19,6 @@ AFPSProjectile::AFPSProjectile()
 		//CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnWhateverWeWantToNameThis);
 		RootComponent = CollisionComponent;
 
-		//// In AFPSProjectile constructor
-		//CollisionComponent->InitSphereRadius(15.0f);
-		//CollisionComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-		//CollisionComponent->SetCollisionObjectType(ECC_GameTraceChannel1); // Use "Projectile" custom channel if you made one
-		//CollisionComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
-		//CollisionComponent->SetCollisionResponseToChannel(ECC_Pawn, ECR_Block); // Block characters
-		//CollisionComponent->SetCollisionResponseToChannel(ECC_WorldStatic, ECR_Block); // Block walls
-		//CollisionComponent->SetNotifyRigidBodyCollision(true); // <-- REQUIRED for OnHit
-
-		//CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnProjectileHit);
-
 		CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnProjectileHit);
 	}
 
