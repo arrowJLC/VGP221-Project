@@ -2,7 +2,11 @@
 	"RemapUnityFiles": 
 	{
 		"Module.VGP221_A1.gen.cpp.obj": [
+			"BTT_Attack.gen.cpp.obj",
+			"BTT_GetRandomPatrolLocation.gen.cpp.obj",
 			"ButtonWidget.gen.cpp.obj",
+			"EnemyAICharacter.gen.cpp.obj",
+			"EnemyAIController.gen.cpp.obj",
 			"FPSProjectGameModeBase.gen.cpp.obj",
 			"FPSProjectile.gen.cpp.obj",
 			"GameHUD.gen.cpp.obj",

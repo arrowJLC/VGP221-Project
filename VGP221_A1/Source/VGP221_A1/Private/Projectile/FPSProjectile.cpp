@@ -2,7 +2,9 @@
 
 
 #include "Projectile/FPSProjectile.h"
-
+#include "Player/FPSCharacter.h"
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/DamageType.h"
 
 // Sets default values
 AFPSProjectile::AFPSProjectile()
@@ -14,8 +16,21 @@ AFPSProjectile::AFPSProjectile()
 		CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
 		CollisionComponent->InitSphereRadius(15.0f);
 		CollisionComponent->BodyInstance.SetCollisionProfileName(TEXT("Projectile"));
-		CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnWhateverWeWantToNameThis);
+		//CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnWhateverWeWantToNameThis);
 		RootComponent = CollisionComponent;
+
+		//// In AFPSProjectile constructor
+		//CollisionComponent->InitSphereRadius(15.0f);
+		//CollisionComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+		//CollisionComponent->SetCollisionObjectType(ECC_GameTraceChannel1); // Use "Projectile" custom channel if you made one
+		//CollisionComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
+		//CollisionComponent->SetCollisionResponseToChannel(ECC_Pawn, ECR_Block); // Block characters
+		//CollisionComponent->SetCollisionResponseToChannel(ECC_WorldStatic, ECR_Block); // Block walls
+		//CollisionComponent->SetNotifyRigidBodyCollision(true); // <-- REQUIRED for OnHit
+
+		//CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnProjectileHit);
+
+		CollisionComponent->OnComponentHit.AddDynamic(this, &AFPSProjectile::OnProjectileHit);
 	}
 
 	if (!ProjectileMovementComponent) {
@@ -81,12 +96,53 @@ void AFPSProjectile::FireInDirection(const FVector& ShootDirection)
 	ProjectileMovementComponent->Velocity = ProjectileMovementComponent->InitialSpeed * ShootDirection;
 }
 
+//void AFPSProjectile::OnWhateverWeWantToNameThis(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
+//{
+//	if (OtherActor != this && OtherComponent->IsSimulatingPhysics()) {
+//		OtherComponent->AddImpulseAtLocation(ProjectileMovementComponent->Velocity * 100.0f, Hit.ImpactPoint);
+//		Destroy();
+//	}
+//}
+
 void AFPSProjectile::OnWhateverWeWantToNameThis(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-	if (OtherActor != this && OtherComponent->IsSimulatingPhysics()) {
-		OtherComponent->AddImpulseAtLocation(ProjectileMovementComponent->Velocity * 100.0f, Hit.ImpactPoint);
+	if (OtherActor && OtherActor != this)
+	{
+		// Deal damage if it hits the player
+		if (OtherActor->IsA(AFPSCharacter::StaticClass()))
+		{
+			UGameplayStatics::ApplyDamage(OtherActor, 10.0f, GetInstigatorController(), this, UDamageType::StaticClass());
+		}
+
+		// Physics impulse
+		if (OtherComponent && OtherComponent->IsSimulatingPhysics())
+		{
+			OtherComponent->AddImpulseAtLocation(ProjectileMovementComponent->Velocity * 100.0f, Hit.ImpactPoint);
+		}
+
 		Destroy();
 	}
+
+	
 }
 
+
+void AFPSProjectile::OnProjectileHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if (OtherActor && OtherActor != this && OtherActor != GetOwner())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Projectile hit %s"), *OtherActor->GetName());
+
+		UGameplayStatics::ApplyDamage(
+			OtherActor,
+			Damage,                        // your projectile damage value
+			GetInstigatorController(),
+			this,
+			UDamageType::StaticClass()
+		);
+		UE_LOG(LogTemp, Warning, TEXT("Projectile hit %s"), *OtherActor->GetName());
+
+		Destroy(); // Destroy projectile after hitting
+	}
+}
 

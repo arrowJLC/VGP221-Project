@@ -44,6 +44,21 @@
     <Filter Include="Source\VGP221_A1\Private">
       <UniqueIdentifier>{4F7A7389-9F95-357E-843B-B9621E270E0A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\VGP221_A1\Private\Enemy">
+      <UniqueIdentifier>{37C03626-EBDD-3917-A487-10A3329E113E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Enemy\BTT_Attack.cpp">
+      <Filter>Source\VGP221_A1\Private\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Enemy\BTT_GetRandomPatrolLocation.cpp">
+      <Filter>Source\VGP221_A1\Private\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Enemy\EnemyAICharacter.cpp">
+      <Filter>Source\VGP221_A1\Private\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\Enemy\EnemyAIController.cpp">
+      <Filter>Source\VGP221_A1\Private\Enemy</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\Gamemode">
       <UniqueIdentifier>{B7975B59-D7BF-34AB-94E6-F1CE83EAA2E9}</UniqueIdentifier>
     </Filter>
@@ -95,6 +110,21 @@
     <Filter Include="Source\VGP221_A1\Public">
       <UniqueIdentifier>{640E5859-4D7E-328A-A8A7-058E910BC024}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\VGP221_A1\Public\Enemy">
+      <UniqueIdentifier>{3A464ECF-F7E4-3C55-BB65-3E9331559094}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Enemy\BTT_Attack.h">
+      <Filter>Source\VGP221_A1\Public\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Enemy\BTT_GetRandomPatrolLocation.h">
+      <Filter>Source\VGP221_A1\Public\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Enemy\EnemyAICharacter.h">
+      <Filter>Source\VGP221_A1\Public\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\Enemy\EnemyAIController.h">
+      <Filter>Source\VGP221_A1\Public\Enemy</Filter>
+    </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\Gamemode">
       <UniqueIdentifier>{294D9924-8747-33B6-88F5-38EF26D8BA62}</UniqueIdentifier>
     </Filter>

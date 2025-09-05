@@ -1,9 +1,13 @@
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Enemy\BTT_Attack.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Enemy\EnemyAIController.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Enemy\EnemyAICharacter.h
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Gamemode\FPSProjectGameModeBase.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\GameWidget.h
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\ButtonWidget.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Player\FPSCharacter.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Projectile\FPSProjectile.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\GameWidget.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Enemy\BTT_GetRandomPatrolLocation.h
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\HUD\GameHUD.h
-D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\HUD\MenuHUD.h
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\GUI\MainMenuWidget.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Player\FPSCharacter.h
 D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Gamemode\MenuGameMode.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\Projectile\FPSProjectile.h
+D:\Unreal\VGP221-Project\VGP221_A1\Source\VGP221_A1\Public\HUD\MenuHUD.h

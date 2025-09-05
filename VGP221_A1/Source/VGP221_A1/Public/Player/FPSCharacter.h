@@ -45,6 +45,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class AFPSProjectile> ProjectileClass;
 
+	UPROPERTY(EditDefaultsOnly, Category = Components)
+	class USceneComponent* GrabbedObjectLocation;
+
 	UFUNCTION()
 	void MoveFoward(float value);
 
@@ -62,6 +65,12 @@ public:
 
 	UFUNCTION()
 	void Gravity();
+	void EndGravity();
+
+	void SetGrabbedObject(UPrimitiveComponent* ObjectToGrab);
+
+	UPROPERTY()
+	UPrimitiveComponent* GrabbedObject;
 
 	UFUNCTION()
 	void Damage(float damageAmt);

@@ -23,6 +23,9 @@ AFPSCharacter::AFPSCharacter()
 		FPSMesh->CastShadow = false;
 	}
 
+	GrabbedObjectLocation = CreateDefaultSubobject<USceneComponent>(TEXT("GrabbedObjectLocation"));
+	GrabbedObjectLocation->SetupAttachment(FPSMesh);
+
 	GetMesh()->SetOwnerNoSee(true);
 }
 
@@ -60,6 +63,7 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	// Fire
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::Fire);
 	PlayerInputComponent->BindAction("Gravity", IE_Pressed, this, &AFPSCharacter::Gravity);
+	PlayerInputComponent->BindAction("Gravity", IE_Released, this, &AFPSCharacter::EndGravity);
 
 }
 
@@ -120,7 +124,7 @@ void AFPSCharacter::Fire()
 	FVector LaunchDirection = MuzzleRotation.Vector();
 	Projectile->FireInDirection(LaunchDirection);
 
-	Damage(10.0f);
+	//Damage(10.0f);
 }
 
 void AFPSCharacter::Damage(float damageAmt)
@@ -150,39 +154,56 @@ float AFPSCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEv
 
 void AFPSCharacter::Gravity()
 {
-	//if (!ProjectileClass) return;
+	const FCollisionQueryParams QueryParams(SCENE_QUERY_STAT(GravityGunTrace), false, this);
+	//const FCollisionQueryParams QueryParams("GravityGunTrace", false, this);
+	const float TraceRange = 5000.0f;
+	const FVector StartTrace = FPSCameraComponent->GetComponentLocation();
+	const FVector EndTrace = (FPSCameraComponent->GetForwardVector() * TraceRange) + StartTrace;
+	FHitResult Hit;
 
-	// Init relevant infomration for where the projectile will be
-	//FVector CameraLocation;
-	//FRotator CameraRotation;
-	//GetActorEyesViewPoint(CameraLocation, CameraRotation);
+	if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
+	{
+		if (UPrimitiveComponent* Prim = Hit.GetComponent())
+		{
+			if (Prim->IsSimulatingPhysics())
+			{
+				//SetGrabbedObject(Prim);
+				float ObjectMass = Prim->GetMass();
 
-	//MuzzleOffset.Set(100.0f, 0.0f, 0.0f);
+				const float MaxPickupMass = 200.0f;
 
-	//FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
-
-	//FRotator MuzzleRotation = CameraRotation;
-	//MuzzleRotation.Pitch += 10.0f;
-
-	//// Start of spawning the projectile
-	//UWorld* World = GetWorld();
-	//if (!World)  return;
-
-	//FActorSpawnParameters SpawnParams;
-	//SpawnParams.Owner = this;
-	//SpawnParams.Instigator = GetInstigator();
-
-	// Unity Instantiate
-	//AFPSProjectile* Projectile = World->SpawnActor<AFPSProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
-	//if (!Projectile) return;
-
-	// Launch spawned projectile in the camera rotation
-	//FVector LaunchDirection = MuzzleRotation.Vector();
-	//Projectile->FireInDirection(LaunchDirection);
-
-	float HealthPerecent = Health / MaxHealth;
-
-	AGameHUD* GameHUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AGameHUD>();
-	GameHUD->GameWidgetContainer->SetHealthBar(HealthPerecent);
+				if (ObjectMass <= MaxPickupMass)
+				{
+					SetGrabbedObject(Prim);
+				}
+			}
+		}
+	}
 }
 
+void AFPSCharacter::EndGravity()
+{
+	if (GrabbedObject)
+	{
+		const float ShootStrength = 5000.0f;
+		const FVector ShootVelocity = FPSCameraComponent->GetForwardVector() * ShootStrength;
+
+		GrabbedObject->DetachFromComponent(FDetachmentTransformRules::KeepWorldTransform);
+		GrabbedObject->SetSimulatePhysics(true);
+		GrabbedObject->AddImpulse(ShootVelocity, NAME_None, true);
+
+		SetGrabbedObject(nullptr);
+	}
+}
+
+
+void AFPSCharacter::SetGrabbedObject(UPrimitiveComponent* ObjectToGrab)
+{
+	GrabbedObject = ObjectToGrab;
+
+	if (GrabbedObject)
+	{
+		GrabbedObject->SetSimulatePhysics(false);
+		GrabbedObject->AttachToComponent(GrabbedObjectLocation, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	}
+}
