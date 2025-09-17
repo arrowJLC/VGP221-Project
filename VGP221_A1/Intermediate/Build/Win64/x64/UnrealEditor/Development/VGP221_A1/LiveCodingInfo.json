@@ -1,21 +1,41 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.VGP221_A1.gen.cpp.obj": [
+		"Module.VGP221_A1.cpp.obj": [
 			"BTT_Attack.gen.cpp.obj",
 			"BTT_GetRandomPatrolLocation.gen.cpp.obj",
 			"ButtonWidget.gen.cpp.obj",
 			"EnemyAICharacter.gen.cpp.obj",
 			"EnemyAIController.gen.cpp.obj",
-			"FPSCharacter.gen.cpp.obj",
-			"FPSProjectGameModeBase.gen.cpp.obj",
 			"FPSProjectile.gen.cpp.obj",
 			"GameHUD.gen.cpp.obj",
 			"GameWidget.gen.cpp.obj",
 			"MainMenuWidget.gen.cpp.obj",
 			"MenuGameMode.gen.cpp.obj",
 			"MenuHUD.gen.cpp.obj",
-			"VGP221_A1.init.gen.cpp.obj"
+			"SaveGameTimer.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BTT_Attack.cpp.obj",
+			"BTT_GetRandomPatrolLocation.cpp.obj",
+			"EnemyAIController.cpp.obj",
+			"FPSProjectMainMenuBase.cpp.obj",
+			"MenuGameMode.cpp.obj",
+			"ButtonWidget.cpp.obj",
+			"MainMenuWidget.cpp.obj",
+			"MenuWidget.cpp.obj",
+			"MenuHUD.cpp.obj",
+			"FPSProjectile.cpp.obj",
+			"VGP221_A1.cpp.obj",
+			"FPSCharacter.gen.cpp.obj",
+			"FPSProjectGameModeBase.gen.cpp.obj",
+			"VGP221_A1.init.gen.cpp.obj",
+			"EnemyAICharacter.cpp.obj",
+			"FPSProjectGameModeBase.cpp.obj",
+			"SaveGameTimer.cpp.obj",
+			"GameWidget.cpp.obj",
+			"GameHUD.cpp.obj",
+			"FPSCharacter.cpp.obj",
+			"SaveTimer.cpp.obj"
 		]
 	}
 }

@@ -71,6 +71,12 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Gamemode\MenuGameMode.cpp">
       <Filter>Source\VGP221_A1\Private\Gamemode</Filter>
     </ClCompile>
+    <Filter Include="Source\VGP221_A1\Private\GameSace">
+      <UniqueIdentifier>{2CADCEA2-4A15-3898-AA61-ADDAB08CFACE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\GameSace\SaveGameTimer.cpp">
+      <Filter>Source\VGP221_A1\Private\GameSace</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_A1\Private\GUI">
       <UniqueIdentifier>{C7CBE682-2F33-3D0F-BCBA-0419DEF2599D}</UniqueIdentifier>
     </Filter>
@@ -107,6 +113,12 @@
     <ClCompile Include="..\..\Source\VGP221_A1\Private\Projectile\FPSProjectile.cpp">
       <Filter>Source\VGP221_A1\Private\Projectile</Filter>
     </ClCompile>
+    <Filter Include="Source\VGP221_A1\Private\SaveGame">
+      <UniqueIdentifier>{08FBC7E5-C53A-314A-83D4-92EBB12CEC89}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\VGP221_A1\Private\SaveGame\SaveTimer.cpp">
+      <Filter>Source\VGP221_A1\Private\SaveGame</Filter>
+    </ClCompile>
     <Filter Include="Source\VGP221_A1\Public">
       <UniqueIdentifier>{640E5859-4D7E-328A-A8A7-058E910BC024}</UniqueIdentifier>
     </Filter>
@@ -136,6 +148,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Gamemode\MenuGameMode.h">
       <Filter>Source\VGP221_A1\Public\Gamemode</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_A1\Public\GameSace">
+      <UniqueIdentifier>{582EEB45-834D-379E-9AD3-A8A5F7E26606}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\GameSace\SaveGameTimer.h">
+      <Filter>Source\VGP221_A1\Public\GameSace</Filter>
     </ClInclude>
     <Filter Include="Source\VGP221_A1\Public\GUI">
       <UniqueIdentifier>{814CFB2C-7491-3BFE-ABDC-01BF7E39F034}</UniqueIdentifier>
@@ -172,6 +190,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\VGP221_A1\Public\Projectile\FPSProjectile.h">
       <Filter>Source\VGP221_A1\Public\Projectile</Filter>
+    </ClInclude>
+    <Filter Include="Source\VGP221_A1\Public\SaveGame">
+      <UniqueIdentifier>{7547C615-63D1-3E37-BDC0-FCAE397894DF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\VGP221_A1\Public\SaveGame\SaveTimer.h">
+      <Filter>Source\VGP221_A1\Public\SaveGame</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

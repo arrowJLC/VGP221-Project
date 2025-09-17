@@ -26,8 +26,14 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	UProgressBar* HealthBar;
 
+	/*UPROPERTY(meta = (BindWidget))
+	UTextBlock* ScoreText;*/
+
 	UPROPERTY(meta = (BindWidget))
-	UTextBlock* ScoreText;
+	UTextBlock* BestTime;
+
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* CurrentTime;
 
 	UPROPERTY(meta = (BindWidget))
 	UVerticalBox* ButtonContainer;
@@ -38,8 +44,14 @@ public:
 	UFUNCTION()
 	void SetHealthBar(float percentage);
 
+	/*UFUNCTION()
+	void SetScoreText(int amount);*/
+
 	UFUNCTION()
-	void SetScoreText(int amount);
+	void SetTimeText(int amount);
+
+	UFUNCTION()
+	void SetBestText(int amount);
 
 private:
 	int UIScore;

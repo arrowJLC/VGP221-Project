@@ -2,6 +2,8 @@
 
 
 #include "Enemy/EnemyAICharacter.h"
+#include "Gamemode/FPSProjectGameModeBase.h"
+
 
 // Sets default values
 AEnemyAICharacter::AEnemyAICharacter()
@@ -80,6 +82,13 @@ void AEnemyAICharacter::Die()
 {
     UE_LOG(LogTemp, Warning, TEXT("Enemy died!"));
 
-    // TODO: play death animation, disable AI, etc.
-    Destroy(); // temporary solution, just removes the actor
+    /*if (GetWorld())
+    {
+        AFPSProjectGameModeBase* GM = Cast<AFPSProjectGameModeBase>(GetWorld()->GetAuthGameMode());
+        if (GM)
+        {
+            GM->AddScore(1);
+        }
+    }*/
+    Destroy();
 }

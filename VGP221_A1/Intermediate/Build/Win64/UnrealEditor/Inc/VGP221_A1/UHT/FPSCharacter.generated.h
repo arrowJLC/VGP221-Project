@@ -16,9 +16,14 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class AFPSCharacter ************************************************************
-#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDamage); \
+	DECLARE_FUNCTION(execOnOverlapBegin); \
 	DECLARE_FUNCTION(execGravity); \
 	DECLARE_FUNCTION(execFire); \
 	DECLARE_FUNCTION(execEndJump); \
@@ -29,7 +34,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 VGP221_A1_API UClass* Z_Construct_UClass_AFPSCharacter_NoRegister();
 
-#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPSCharacter(); \
 	friend struct Z_Construct_UClass_AFPSCharacter_Statics; \
@@ -40,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(AFPSCharacter)
 
 
-#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AFPSCharacter(AFPSCharacter&&) = delete; \
 	AFPSCharacter(const AFPSCharacter&) = delete; \
@@ -50,13 +55,13 @@ public: \
 	NO_API virtual ~AFPSCharacter();
 
 
-#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_16_PROLOG
-#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_GENERATED_BODY \
+#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_17_PROLOG
+#define FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_INCLASS_NO_PURE_DECLS \
-	FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_19_ENHANCED_CONSTRUCTORS \
+	FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_INCLASS_NO_PURE_DECLS \
+	FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

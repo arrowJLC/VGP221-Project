@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/Character.h"
@@ -19,7 +20,6 @@ class VGP221_A1_API AFPSCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	AFPSCharacter();
 
 protected:
@@ -27,10 +27,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(VisibleAnywhere)
@@ -47,6 +45,16 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = Components)
 	class USceneComponent* GrabbedObjectLocation;
+
+	UPROPERTY()
+	UPrimitiveComponent* GrabbedObject;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Grappling, meta = (AllowPrivateAccess = "true"))
+	class UCableComponent* GrappleCable;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+	TSubclassOf<UUserWidget> OverlapWidgetClass;
+	UUserWidget* ActiveWidget;
 
 	UFUNCTION()
 	void MoveFoward(float value);
@@ -69,8 +77,9 @@ public:
 
 	void SetGrabbedObject(UPrimitiveComponent* ObjectToGrab);
 
-	UPROPERTY()
-	UPrimitiveComponent* GrabbedObject;
+	UFUNCTION()
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 
 	UFUNCTION()
 	void Damage(float damageAmt);
@@ -80,4 +89,84 @@ public:
 
 	float Health = 100.0f;
 	float MaxHealth = 100.0f;
+
+private:
+
+	float MaxLineDistance = 2000.0f;
+	bool isGrapple = false;
+	FVector GrabPoint;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include "PhysicsEngine/PhysicsHandleComponent.h"
+
+UCLASS()
+class VGP221_A1_API AFPSCharacter : public ACharacter
+{
+	GENERATED_BODY()
+
+public:
+	AFPSCharacter();
+
+protected:
+	virtual void BeginPlay() override;
+
+public:
+	virtual void Tick(float DeltaTime) override;
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	// Camera + Mesh
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* FPSCameraComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	USkeletalMeshComponent* FPSMesh;
+
+	// Gravity Gun
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="GravityGun")
+	UPhysicsHandleComponent* PhysicsHandle;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="GravityGun")
+	USceneComponent* GrabbedObjectLocation;
+
+	UPROPERTY()
+	UPrimitiveComponent* GrabbedObject;
+
+	// Input Functions
+	UFUNCTION()
+	void Gravity();
+
+	UFUNCTION()
+	void EndGravity();
+
+	// Helpers
+	void GrabObject(UPrimitiveComponent* ObjectToGrab);
+	void ReleaseObject();
+};
+
+
+
+
+*/

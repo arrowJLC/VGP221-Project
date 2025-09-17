@@ -6,19 +6,24 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Player/FPSCharacter.h"
+#include "Engine/HitResult.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+CABLECOMPONENT_API UClass* Z_Construct_UClass_UCableComponent_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_VGP221_A1();
 VGP221_A1_API UClass* Z_Construct_UClass_AFPSCharacter();
 VGP221_A1_API UClass* Z_Construct_UClass_AFPSCharacter_NoRegister();
@@ -238,6 +243,87 @@ DEFINE_FUNCTION(AFPSCharacter::execMoveRight)
 }
 // ********** End Class AFPSCharacter Function MoveRight *******************************************
 
+// ********** Begin Class AFPSCharacter Function OnOverlapBegin ************************************
+struct Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics
+{
+	struct FPSCharacter_eventOnOverlapBegin_Parms
+	{
+		UPrimitiveComponent* OverlappedComp;
+		AActor* OtherActor;
+		UPrimitiveComponent* OtherComp;
+		int32 OtherBodyIndex;
+		bool bFromSweep;
+		FHitResult SweepResult;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlappedComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SweepResult_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappedComp;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_OtherBodyIndex;
+	static void NewProp_bFromSweep_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bFromSweep;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_SweepResult;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OverlappedComp = { "OverlappedComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FPSCharacter_eventOnOverlapBegin_Parms, OverlappedComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlappedComp_MetaData), NewProp_OverlappedComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FPSCharacter_eventOnOverlapBegin_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FPSCharacter_eventOnOverlapBegin_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OtherComp_MetaData), NewProp_OtherComp_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OtherBodyIndex = { "OtherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FPSCharacter_eventOnOverlapBegin_Parms, OtherBodyIndex), METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit(void* Obj)
+{
+	((FPSCharacter_eventOnOverlapBegin_Parms*)Obj)->bFromSweep = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FPSCharacter_eventOnOverlapBegin_Parms), &Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FPSCharacter_eventOnOverlapBegin_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SweepResult_MetaData), NewProp_SweepResult_MetaData) }; // 267591329
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OverlappedComp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OtherActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OtherComp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_OtherBodyIndex,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_bFromSweep,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::NewProp_SweepResult,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, nullptr, "OnOverlapBegin", Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::FPSCharacter_eventOnOverlapBegin_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::FPSCharacter_eventOnOverlapBegin_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AFPSCharacter::execOnOverlapBegin)
+{
+	P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
+	P_GET_OBJECT(AActor,Z_Param_OtherActor);
+	P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+	P_GET_PROPERTY(FIntProperty,Z_Param_OtherBodyIndex);
+	P_GET_UBOOL(Z_Param_bFromSweep);
+	P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
+	P_NATIVE_END;
+}
+// ********** End Class AFPSCharacter Function OnOverlapBegin **************************************
+
 // ********** Begin Class AFPSCharacter Function StartJump *****************************************
 struct Z_Construct_UFunction_AFPSCharacter_StartJump_Statics
 {
@@ -278,6 +364,7 @@ void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 		{ "Gravity", &AFPSCharacter::execGravity },
 		{ "MoveFoward", &AFPSCharacter::execMoveFoward },
 		{ "MoveRight", &AFPSCharacter::execMoveRight },
+		{ "OnOverlapBegin", &AFPSCharacter::execOnOverlapBegin },
 		{ "StartJump", &AFPSCharacter::execStartJump },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -346,6 +433,16 @@ struct Z_Construct_UClass_AFPSCharacter_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GrappleCable_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Grappling" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlapWidgetClass_MetaData[] = {
+		{ "Category", "UI" },
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FPSCameraComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FPSMesh;
@@ -353,6 +450,8 @@ struct Z_Construct_UClass_AFPSCharacter_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_GrabbedObjectLocation;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_GrabbedObject;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_GrappleCable;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_OverlapWidgetClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -362,6 +461,7 @@ struct Z_Construct_UClass_AFPSCharacter_Statics
 		{ &Z_Construct_UFunction_AFPSCharacter_Gravity, "Gravity" }, // 3625777317
 		{ &Z_Construct_UFunction_AFPSCharacter_MoveFoward, "MoveFoward" }, // 4029391424
 		{ &Z_Construct_UFunction_AFPSCharacter_MoveRight, "MoveRight" }, // 487790710
+		{ &Z_Construct_UFunction_AFPSCharacter_OnOverlapBegin, "OnOverlapBegin" }, // 1000897712
 		{ &Z_Construct_UFunction_AFPSCharacter_StartJump, "StartJump" }, // 3893168374
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -376,6 +476,8 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFPSCharacter_
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, ProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AFPSProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileClass_MetaData), NewProp_ProjectileClass_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_GrabbedObjectLocation = { "GrabbedObjectLocation", nullptr, (EPropertyFlags)0x0010000000090009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, GrabbedObjectLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrabbedObjectLocation_MetaData), NewProp_GrabbedObjectLocation_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_GrabbedObject = { "GrabbedObject", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, GrabbedObject), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrabbedObject_MetaData), NewProp_GrabbedObject_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_GrappleCable = { "GrappleCable", nullptr, (EPropertyFlags)0x001000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, GrappleCable), Z_Construct_UClass_UCableComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrappleCable_MetaData), NewProp_GrappleCable_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_OverlapWidgetClass = { "OverlapWidgetClass", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, OverlapWidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlapWidgetClass_MetaData), NewProp_OverlapWidgetClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPSCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_FPSCameraComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_FPSMesh,
@@ -383,6 +485,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPSChara
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_ProjectileClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_GrabbedObjectLocation,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_GrabbedObject,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_GrappleCable,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_OverlapWidgetClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AFPSCharacter_Statics::DependentSingletons[])() = {
@@ -421,10 +525,10 @@ AFPSCharacter::~AFPSCharacter() {}
 struct Z_CompiledInDeferFile_FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h__Script_VGP221_A1_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 1491194478U) },
+		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 2088510279U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h__Script_VGP221_A1_661917350(TEXT("/Script/VGP221_A1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h__Script_VGP221_A1_3844121755(TEXT("/Script/VGP221_A1"),
 	Z_CompiledInDeferFile_FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h__Script_VGP221_A1_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VGP221_A1_Source_VGP221_A1_Public_Player_FPSCharacter_h__Script_VGP221_A1_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

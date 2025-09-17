@@ -20,7 +20,7 @@ void AGameHUD::DrawHUD()
 {
 	Super::DrawHUD();
 	
-	float OffsetX = -29.0f; // move left by 50 pixels
+	float OffsetX = -29.0f;
 
 	if (!CrosshairTexture) return;
 
